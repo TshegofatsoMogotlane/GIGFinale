@@ -12,6 +12,7 @@
     "@types/body-parser": "^1.19.5",
     "@types/express": "^5.0.0",
     "@types/node": "^22.10.7",
+    "@types/nodemailer": "^6.4.17",
     "@types/nodemon": "^1.19.6",
     "body-parser": "^1.20.3",
     "cors": "^2.8.5",
@@ -19,6 +20,8 @@
     "express-validator": "^7.2.1",
     "mongoose": "^8.9.5",
     "node": "^22.13.0",
+    "nodemailer": "^6.9.16",
+    "nodemailer-sendgrid-transport": "^0.2.0",
     "nodemon": "^3.1.9",
     "ts-node": "^10.9.2",
     "typescript": "^5.7.3"

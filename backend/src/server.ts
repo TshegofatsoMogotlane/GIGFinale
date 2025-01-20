@@ -3,6 +3,7 @@ import mongoose from "mongoose"
 import { getEnvironmentVariables } from "./environments/environment"
 import UserRouter from "./routers/UserRouter"
 import bodyParser = require("body-parser")
+import * as cors from "cors"
 
 
 
@@ -16,6 +17,7 @@ export class Server{
     }
     setConfigs(){
         this.connectMongoDB()
+        this.allowCors()
         this.configureBodyParser()
     }
     connectMongoDB(){
@@ -25,6 +27,9 @@ export class Server{
         }).catch(e=>{
             console.log(e)
         })
+    }
+    allowCors(){
+        this.app.use(cors())
     }
     configureBodyParser(){
         this.app.use(bodyParser.urlencoded({
