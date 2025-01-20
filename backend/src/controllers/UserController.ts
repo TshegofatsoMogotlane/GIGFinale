@@ -1,7 +1,6 @@
 import Users from "../models/Users"
-import { validationResult } from "express-validator"
 import { Utils } from "../utils/Utils"
-// import { NodeMailer } from "../utils/NodeMailer"
+
 
 export class UserController{
     static async signup(req, res, next){
